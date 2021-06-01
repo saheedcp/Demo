@@ -2,7 +2,7 @@ node{
 
     stage('SCM Checkout')
     {
-        git  url: 'https://github.com/saheedcp/Demo.git'
+        git credentialsId: 'github', url: 'https://github.com/saheedcp/Demo.git'
     }
     
     stage('Run Docker Compose File')
